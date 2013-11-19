@@ -39,5 +39,8 @@
   },
   "keywords": [
     "gruntplugin"
-  ]
+  ],
+  "dependencies": {
+    "doccy": "0.0.3"
+  }
 }
