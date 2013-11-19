@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/doclements/grunt-doccy.png?branch=master)](https://travis-ci.org/doclements/grunt-doccy)
+
+
 # grunt-doccy
 
 > A grunt task for generating documentation using doccy from https://github.com/jackfranklin/doccy
