@@ -8,6 +8,8 @@
 
 'use strict';
 
+var doccy = require('doccy');
+
 module.exports = function(grunt) {
 
   // Please see the Grunt documentation for more information regarding task
@@ -16,8 +18,8 @@ module.exports = function(grunt) {
   grunt.registerMultiTask('doccy', 'A grunt task for generating MarkDown documentation from JavaScript src files. Uses Doccy from https://github.com/jackfranklin/doccy', function() {
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
-      punctuation: '.',
-      separator: ', '
+      src_dir: 'src',
+      out_dir: 'docs'
     });
 
     // Iterate over all specified file groups.
