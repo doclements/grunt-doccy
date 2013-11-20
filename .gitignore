@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 node_modules
 npm-debug.log
 tmp
+=======
+node_modules
+npm-debug.log
+tmp
+>>>>>>> a51cf10b7fe94196d86cae358418220c507fb070
