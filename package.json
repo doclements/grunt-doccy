@@ -1,34 +1,15 @@
 {
   "name": "grunt-doccy",
-<<<<<<< HEAD
-  "description": "A grunt task for generating MarkDown documentation from JavaScript src files. Uses Doccy from https://github.com/jackfranklin/doccy",
-  "version": "0.0.0",
-  "homepage": "https://github.com/olcl/grunt-doccy",
-  "author": {
-    "name": "doclements",
-=======
   "description": "A grunt task for generating documentation using doccy from https://github.com/jackfranklin/doccy",
   "version": "0.0.0",
   "homepage": "https://github.com/doclements/grunt-doccy",
   "author": {
     "name": "Olly Clements",
->>>>>>> a51cf10b7fe94196d86cae358418220c507fb070
     "email": "d.o.clements@googlemail.com",
     "url": "http://blog.biodesigns.co.uk"
   },
   "repository": {
     "type": "git",
-<<<<<<< HEAD
-    "url": "git://github.com/olcl/grunt-doccy.git"
-  },
-  "bugs": {
-    "url": "https://github.com/olcl/grunt-doccy/issues"
-  },
-  "licenses": [{
-    "type": "MIT",
-    "url": "https://github.com/olcl/grunt-doccy/blob/master/LICENSE-MIT"
-  }],
-=======
     "url": "git://github.com/doclements/grunt-doccy.git"
   },
   "bugs": {
@@ -40,7 +21,6 @@
       "url": "https://github.com/doclements/grunt-doccy/blob/master/LICENSE-MIT"
     }
   ],
->>>>>>> a51cf10b7fe94196d86cae358418220c507fb070
   "main": "Gruntfile.js",
   "engines": {
     "node": ">= 0.8.0"
@@ -48,12 +28,6 @@
   "scripts": {
     "test": "grunt test"
   },
-<<<<<<< HEAD
-  "dependencies": {
-    "doccy" : "~0.0.3"
-  },
-=======
->>>>>>> a51cf10b7fe94196d86cae358418220c507fb070
   "devDependencies": {
     "grunt-contrib-jshint": "~0.6.0",
     "grunt-contrib-clean": "~0.4.0",
@@ -61,14 +35,6 @@
     "grunt": "~0.4.1"
   },
   "peerDependencies": {
-<<<<<<< HEAD
-    "grunt": "~4.0"
-  },
-  "keywords": [
-    "gruntplugin"
-  ]
-}
-=======
     "grunt": "~0.4.1"
   },
   "keywords": [
@@ -78,4 +44,3 @@
     "doccy": "0.0.3"
   }
 }
->>>>>>> a51cf10b7fe94196d86cae358418220c507fb070
