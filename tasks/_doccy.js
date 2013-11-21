@@ -34,8 +34,8 @@ module.exports = function(grunt) {
     this.files.forEach(function(f) {
 
       
-      if (grunt.file.isDir(f.dest)) {
-
+//      if (grunt.file.isDir(f.dest)) {
+if (true) {
 
         var dest = f.dest.toString();
         console.log(typeof(dest));
@@ -47,7 +47,9 @@ module.exports = function(grunt) {
 
           f.src.forEach(function(src_file) {
               var _in = src_file;
-              var filename = src_file.split(path.sep);
+              console.log(path.sep);
+              var filename = src_file.split('/');
+              console.log(filename);
               filename = filename[filename.length - 1];
               filename = filename.split('.')[0];
               var _out = dest + '/' + filename + '.md';
