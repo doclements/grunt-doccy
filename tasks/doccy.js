@@ -37,23 +37,23 @@ module.exports = function(grunt) {
 
 
         var dest = f.dest.toString();
-        console.log(typeof(dest));
+        
         if (!fs.existsSync(dest)) {
-          console.log('dest does not exist ... creating......|' + dest);
+          grunt.log.warn('dest does not exist. creating ' + dest);
           grunt.file.mkdir(dest, '0755');
         }
           var count = 1;
 
           f.src.forEach(function(src_file) {
               var _in = src_file;
-              console.log(path.sep);
+              //console.log(path.sep);
               var filename = src_file.split('/');
-              console.log(filename);
+              //console.log(filename);
               filename = filename[filename.length - 1];
               filename = filename.split('.')[0];
               var _out = dest + '/' + filename + '.md';
-              console.log(_in);
-              console.log(_out);
+              //console.log(_in);
+              //console.log(_out);
               if(count<f.src.length){
               doccy.init(_in, _out);
               }
@@ -65,7 +65,7 @@ module.exports = function(grunt) {
               //console.log(doccy);
               //done();
               //console.log(it);
-              grunt.log.writeln('File "' + _out + '" created.');
+              grunt.log.ok('File "' + _out + '" created.');
             });
 
 
