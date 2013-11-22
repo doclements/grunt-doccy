@@ -29,12 +29,12 @@ module.exports = function(grunt) {
     },
 
     // Configuration to be run (and then tested).
-    _doccy: {
+    doccy: {
       default_options: {
         options: {
         },
         src: ['test/src/*.js'],
-        dest : ['test/tmp']
+        dest : 'test/tmp'
         
       }
     },
@@ -56,9 +56,11 @@ module.exports = function(grunt) {
 
   // Whenever the "test" task is run, first clean the "tmp" dir, then run this
   // plugin's task(s), then test the result.
-  grunt.registerTask('test', ['clean','_doccy', 'nodeunit']);
+  grunt.registerTask('test', ['clean','doccy', 'nodeunit']);
 
   // By default, lint and run all tests.
   grunt.registerTask('default', ['jshint', 'test']);
+
+  grunt.registerTask('_AA', ['default']);
 
 };
