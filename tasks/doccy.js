@@ -19,7 +19,7 @@ module.exports = function(grunt) {
   delete require.cache;
   //console.log('#########',require.cache['node_modules/doccy/index.js']);
   var doccy = require('doccy');
-  var process = require('process');
+  
 
   grunt.registerMultiTask('doccy', 'A grunt task for generating documentation using doccy from https://github.com/jackfranklin/doccy', function() {
     // Merge task-specific and/or target-specific options with these defaults.
